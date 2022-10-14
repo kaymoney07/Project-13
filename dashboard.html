@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>PROJECT 14</title>
+  </head>
+  <body>
+    <aside>
+      <div class="sidebar-top">
+        <div class="logo_content">
+          <img src="./IMG-20221010-WA0012.jpg" alt="logo" />
+          <p>Olaf</p>
+          <div class="hamburger">
+            <span class="bar1" id="bar1"></span>
+            <span class="bar2" id="bar2"></span>
+            <span class="bar3" id="bar3"></span>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-body">
+        <ul>
+          <li class="heading">main</li>
+
+          <li class="menu-item">
+            <a href="#" class="drp-link" onclick="onClickMenu()">
+              <div>
+                <i class="bx bx-home-circle"></i>
+                <span class="menu-name">Dashboard</span>
+                <span class="count">2</span>
+              </div>
+              <i class="bx bx-chevron-left"></i>
+            </a>
+            <ul class="dropdown">
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-analyse"></i>
+                  <span class="menu-name">Analytics</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bxs-shopping-bag"></i>
+                  <span class="menu-name">eCommerce</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="heading">apps</li>
+          <li class="menu-item">
+            <a href="#" class="drp-link" onclick="onClickMenu()">
+              <div>
+                <i class="bx bx-envelope"></i>
+                <span class="menu-name">Email</span>
+                <span class="count">3</span>
+              </div>
+              <i class="bx bx-chevron-left"></i>
+            </a>
+            <ul class="dropdown">
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bxs-inbox"></i>
+                  <span class="menu-name">Inbox</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bxs-badge-check"></i>
+                  <span class="menu-name">Read</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-send"></i>
+                  <span class="menu-name">Compose</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="bx bx-message"></i>
+              <span class="menu-name">Chat</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="bx bx-badge-check"></i>
+              <span class="menu-name">Todo</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="bx bx-calendar"></i>
+              <span class="menu-name">Calender</span>
+            </a>
+          </li>
+          <li class="heading">ui element</li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="bx bx-grid"></i>
+              <span class="menu-name">Grid</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="bx bxs-color-fill"></i>
+              <span class="menu-name">Colors</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="drp-link" onclick="onClickMenu()">
+              <div>
+                <i class="bx bx-brightness"></i>
+                <span class="menu-name">Icons</span>
+              </div>
+              <i class="bx bx-chevron-left"></i>
+            </a>
+            <ul class="dropdown">
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Boxicons</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Feather Icons</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="drp-link" onclick="onClickMenu()">
+              <div>
+                <i class="bx bx-card"></i>
+                <span class="menu-name">Cards</span>
+              </div>
+              <i class="bx bx-chevron-left"></i>
+            </a>
+            <ul class="dropdown">
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Basic cards</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Colors Card</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Statistics Card</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="drp-link" onclick="onClickMenu()">
+              <div>
+                <i class="bx bx-chart"></i>
+                <span class="menu-name">Component</span>
+              </div>
+              <i class="bx bx-chevron-left"></i>
+            </a>
+            <ul class="dropdown">
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Alert</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Badge</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Border</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Breadcrumb</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Buttons</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Button Group</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Slider</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Collapse</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Display</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Dropdown</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Embed</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Figures</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Images</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Jumbotron</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">List Group</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Media Object</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Modal</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Navs</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Navbar</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Pagination</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Progress</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Spinner</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Text</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Vertical Alignment</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Typography</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Tooltips</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <i class="bx bx-right-arrow-alt"></i>
+                  <span class="menu-name">Popovers</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="heading">forms & table</li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="bx bxs-layer"></i>
+              <span class="menu-name">Form layout</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="bx bx-file"></i>
+              <span class="menu-name">Form input Group</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="bx bx-table"></i>
+              <span class="menu-name">Table</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="bx bx-calendar"></i>
+              <span class="menu-name">Table Dark</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <script src="./index.js"></script>
+  </body>
+</html>
